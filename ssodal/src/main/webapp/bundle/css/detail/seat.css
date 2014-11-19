@@ -125,7 +125,7 @@
 	height:80px;
 	float:center;	
 }
-/* button hover*/
+/* left div button hover*/
 #article #section_seat #seat_outline #seat_location #seat_lo_box #one_floor .seat_one_VIP_mid:hover, #two_floor .seat_two_VIP:hover{
 	cursor:pointer; cursor:hand;
 	border:3px solid #d27328;
@@ -145,4 +145,13 @@
 	cursor:pointer; cursor:hand;
 	border:3px solid #ff32b1;
 	background-color:#ff88a7;
+}
+/* right div infomations */
+#article #section_seat #seat_outline #seat_detail_Information{
+	height:48%;
+	border:3px solid #ff32b1;
+}
+#article #section_seat #seat_outline #seat_detail_Information p{
+	margin-top:10px; margin-left:8px;
+	
 }

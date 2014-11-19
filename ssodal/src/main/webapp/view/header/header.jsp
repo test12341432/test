@@ -32,7 +32,8 @@
         <script type="text/javascript" src="./bundle/js/jquery-1.11.1.js"></script>
         <!-- ----- header ----- -->
         <script type="text/javascript" src="./bundle/js/header/header.js"></script>
-        
+        <!-- ----- seat ----- -->
+        <script type="text/javascript" src="./bundle/js/seat/seat.js"></script>
         <title>SsoDal</title>
     </head>
     <body>

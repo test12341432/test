@@ -12,12 +12,12 @@
 								<div id="one_floor">
 								<p>1층</p>
 								<input type="button" value="R석" class="seat_one_R_left"/>
-								<input type="button" value="VIP석" class="seat_one_VIP_mid" />
+								<input type="button" value="VIP석" id="vip_seat" name="vip_seat" class="seat_one_VIP_mid" />
 								<input type="button" value="R석" class="seat_one_R_right"/>
 								</div>
 								<div id="two_floor">
 								<p>2층</p>
-								<input type="button" value="VIP석" class="seat_two_VIP" />
+								<input type="button" value="VIP석" id="vip_seat" name="vip_seat" class="seat_two_VIP" />
 								<input type="button" value="R석" class="seat_two_R"/>
 								<input type="button" value="S석" class="seat_two_S"/>
 								</div>
@@ -33,6 +33,9 @@
 							<p>제목&nbsp;${m.content_title}</p>
 							<p>부제&nbsp;${m.content_subtitle}</p>
 							<p>장르&nbsp;${m.content_genre}</p>
+							<p>장소&nbsp;${m.content_spot}</p>
+							<p>출연진&nbsp;${m.content_cast}</p>
+							<p>등급&nbsp;${m.content_rating}세&nbsp;이상&nbsp;관람가</p>
 							</div>
 							<div id="info_date">
 								
