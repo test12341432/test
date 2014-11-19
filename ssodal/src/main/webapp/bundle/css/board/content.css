@@ -1,0 +1,38 @@
+#wrapper article #section_content #content_wrapper {
+    position:relative;
+    width:900px;
+    margin:20px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 1px 1px rgba(0,0,0,0.5);
+    background-color:#f7f7f7
+}
+#wrapper article #section_content #content_wrapper ul {}
+#wrapper article #section_content #content_wrapper ul li { display:inline-block; margin:10px 0; }
+#wrapper article #section_content #content_wrapper ul img {
+    width:70%; margin:0 auto;
+    border-radius:10px;
+}
+#wrapper article #section_content #content_wrapper ul li h3 { display:inline-block; }
+
+#wrapper article #section_content #content_wrapper ul li:nth-child(1) { width:100%; font-size:30px; line-height:40px; border-radius:5px; padding:5px; }
+#wrapper article #section_content #content_wrapper ul li:nth-child(2),#wrapper article #section_content #content_wrapper ul li:nth-child(3) {
+    width:40%; font-size:16px; line-height:30px; border-radius:5px; padding:5px;
+}
+#wrapper article #section_content #content_wrapper ul li:nth-child(3) { position:relative; left:19.5%; }
+#wrapper article #section_content #content_wrapper ul li:nth-child(3) { text-align:right; }
+#wrapper article #section_content #content_wrapper ul li:nth-child(3) h3:nth-child(1) { margin-right:20px; }
+#wrapper article #section_content #content_wrapper ul li:nth-child(4) { width:100%; font-size:20px; line-height:1.5; }
+#wrapper article #section_content #content_wrapper ul li:nth-child(4) img { margin-bottom:20px; }
+#wrapper article #section_content #content_wrapper div#menu_wrapper { text-align:center; }
+#wrapper article #section_content #content_wrapper input[type="button"] {
+    display:inline-block;
+    width:100px; height:30px;
+    margin:20px 0;
+    line-height:26px; text-align:center; color:#eb8d78;
+    border:2px solid #eb8d78;
+    border-radius:5px;
+    background-color:transparent;
+    transition:all 0.3s ease-out;
+}
+#wrapper article #section_content #content_wrapper input[type="button"]:hover { color:#ffcbb6; background-color:#eb8d78; }

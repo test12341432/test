@@ -1,0 +1,326 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<style>
+table {width:100%;}
+th {background-color:#ccc;}
+div {margin-bottom:30px;}
+</style>
+</head>
+<body>
+<div>
+<table border=1>
+<tr>
+<th colSpan="1">엔티티 타입명</th>
+<td colSpan="1">공연 콘텐츠</td>
+<th colSpan="1">작성일</th>
+<td colSpan="1">2014 11 18</td>
+</tr>
+<tr>
+<th colSpan="1">테이블명</th>
+<td colSpan="1">TABLE2</td>
+<th colSpan="1">작성자</th>
+<td colSpan="1">eXERD</td>
+</tr>
+<tr>
+<th colSpan="1">테이블 설명</th>
+<td colSpan="3">&nbsp;</td>
+</tr>
+</table>
+<table border=1>
+<tr>
+<th colSpan="1">번호</th>
+<th colSpan="1">컬럼명</th>
+<th colSpan="1">속성명</th>
+<th colSpan="1">도메인</th>
+<th colSpan="1">데이터 타입</th>
+<th colSpan="1">NULL 여부</th>
+<th colSpan="1">기본값</th>
+<th colSpan="1">KEY</th>
+</tr>
+<tr>
+<td colSpan="1">1</td>
+<td colSpan="1">COL6</td>
+<td colSpan="1">번호</td>
+<td colSpan="1">content_code</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">NOT NULL</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">PK</td>
+</tr>
+<tr>
+<td colSpan="1">2</td>
+<td colSpan="1">COL</td>
+<td colSpan="1">장르</td>
+<td colSpan="1">content_genre</td>
+<td colSpan="1">varchar2(100)</td>
+<td colSpan="1">NOT NULL</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">3</td>
+<td colSpan="1">COL16</td>
+<td colSpan="1">영어제목</td>
+<td colSpan="1">content_engtitle</td>
+<td colSpan="1">varchar2(100)</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">4</td>
+<td colSpan="1">COL2</td>
+<td colSpan="1">부제</td>
+<td colSpan="1">content_subtitle</td>
+<td colSpan="1">varchar2(300)</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">5</td>
+<td colSpan="1">COL4</td>
+<td colSpan="1">행사기간</td>
+<td colSpan="1">content_eventperiod</td>
+<td colSpan="1">varchar2(30)</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">6</td>
+<td colSpan="1">COL5</td>
+<td colSpan="1">행사장소</td>
+<td colSpan="1">contentl_Spot</td>
+<td colSpan="1">varchar2(50)</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">7</td>
+<td colSpan="1">COL7</td>
+<td colSpan="1">출연진</td>
+<td colSpan="1">content_Cast</td>
+<td colSpan="1">varchar2(300)</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">8</td>
+<td colSpan="1">COL8</td>
+<td colSpan="1">관람등급</td>
+<td colSpan="1">content_rating</td>
+<td colSpan="1">varchar2(20)</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">9</td>
+<td colSpan="1">COL9</td>
+<td colSpan="1">관람기간</td>
+<td colSpan="1">content_startdate</td>
+<td colSpan="1">varchar2(30)</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">10</td>
+<td colSpan="1">COL3</td>
+<td colSpan="1">좌석여부(자유석,지정석)</td>
+<td colSpan="1">content_seat</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">NOT NULL</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">11</td>
+<td colSpan="1">COL15</td>
+<td colSpan="1">좌석등급</td>
+<td colSpan="1">content_seat_class</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">12</td>
+<td colSpan="1">COL17</td>
+<td colSpan="1">총좌석</td>
+<td colSpan="1">content_maxcount</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">13</td>
+<td colSpan="1">COL10</td>
+<td colSpan="1">자유석 입장료</td>
+<td colSpan="1">content_com_price</td>
+<td colSpan="1">INTEGER</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">14</td>
+<td colSpan="1">COL14</td>
+<td colSpan="1">VIP석 입장료</td>
+<td colSpan="1">content_vip_price</td>
+<td colSpan="1">INTEGER</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">15</td>
+<td colSpan="1">COL11</td>
+<td colSpan="1">R석 입장료</td>
+<td colSpan="1">content_r_price</td>
+<td colSpan="1">INTEGER</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">16</td>
+<td colSpan="1">COL12</td>
+<td colSpan="1">S석 입장료</td>
+<td colSpan="1">content_S_price</td>
+<td colSpan="1">INTEGER</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">17</td>
+<td colSpan="1">COL13</td>
+<td colSpan="1">A석 입장료</td>
+<td colSpan="1">content_a_Price</td>
+<td colSpan="1">INTEGER</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+</table>
+</div>
+<div>
+<table border=1>
+<tr>
+<th colSpan="1">엔티티 타입명</th>
+<td colSpan="1">seat_Infomation</td>
+<th colSpan="1">작성일</th>
+<td colSpan="1">2014 11 18</td>
+</tr>
+<tr>
+<th colSpan="1">테이블명</th>
+<td colSpan="1">TABLE6</td>
+<th colSpan="1">작성자</th>
+<td colSpan="1">eXERD</td>
+</tr>
+<tr>
+<th colSpan="1">테이블 설명</th>
+<td colSpan="3">&nbsp;</td>
+</tr>
+</table>
+<table border=1>
+<tr>
+<th colSpan="1">번호</th>
+<th colSpan="1">컬럼명</th>
+<th colSpan="1">속성명</th>
+<th colSpan="1">도메인</th>
+<th colSpan="1">데이터 타입</th>
+<th colSpan="1">NULL 여부</th>
+<th colSpan="1">기본값</th>
+<th colSpan="1">KEY</th>
+</tr>
+<tr>
+<td colSpan="1">1</td>
+<td colSpan="1">COL6</td>
+<td colSpan="1">번호</td>
+<td colSpan="1">content_code</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">NOT NULL</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">PK, FK</td>
+</tr>
+<tr>
+<td colSpan="1">2</td>
+<td colSpan="1">COL5</td>
+<td colSpan="1">아이디</td>
+<td colSpan="1">id</td>
+<td colSpan="1">varchar2(100)</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">3</td>
+<td colSpan="1">COL15</td>
+<td colSpan="1">좌석등급</td>
+<td colSpan="1">content_seat_class</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">4</td>
+<td colSpan="1">COL3</td>
+<td colSpan="1">공연날짜</td>
+<td colSpan="1">seat_date</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">5</td>
+<td colSpan="1">COL4</td>
+<td colSpan="1">좌석 구역</td>
+<td colSpan="1">seat_location</td>
+<td colSpan="1">varchar2(30)</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">6</td>
+<td colSpan="1">COL</td>
+<td colSpan="1">좌석 열</td>
+<td colSpan="1">seat_row</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">7</td>
+<td colSpan="1">COL2</td>
+<td colSpan="1">좌석 행</td>
+<td colSpan="1">seat_line</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colSpan="1">8</td>
+<td colSpan="1">COL18</td>
+<td colSpan="1">선택좌석</td>
+<td colSpan="1">seat_selected</td>
+<td colSpan="1">INT</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+<td colSpan="1">&nbsp;</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

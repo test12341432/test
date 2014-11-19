@@ -1,0 +1,151 @@
+/*//////////////////////////////////////////////////*/
+/*//////////last-date/////2014.09.25////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////target/////header///////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////author/////FreshSJ//////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////publisher/////FreshD&D//////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////copyright/////CodeCake//////////////////*/
+/*//////////////////////////////////////////////////*/
+
+/* --------------- start of header --------------- */
+#wrapper header {
+    position:relative;
+    top:0; left:0;
+    display:-webkit-box;
+    -webkit-box-pack:justify;
+    width:100%; height:65px;
+    font-family:"Lato";
+    background-color:#ffffff;
+    transition:all 0.25s ease-in-out;
+    z-index:1;
+}
+/* --------------- end of header --------------- */
+
+/* --------------- start of wrapper_logo --------------- */
+#wrapper header #wrapper_logo {
+    position:relative;
+    top:0; left:0;
+    width:100px; height:65px;
+    padding:0 25px;
+    background-color:transparent;
+}
+#wrapper header #wrapper_logo a div {
+    position:relative;
+    width:50px; height:65px;
+    background-image:url("../../../images/basic/logo/logo.png");
+    background-repeat:no-repeat;
+    background-size:50px;
+    background-position:center;
+}
+/* --------------- end of wrapper_logo --------------- */
+
+/* --------------- start of nav --------------- */
+#wrapper header nav {
+    position:relative;
+    top:0; left:0;
+    width:500px; height:65px;
+}
+#wrapper header nav ul {
+    position:relative;
+    display:-webkit-box;
+    -webkit-box-pack:justify;
+}
+#wrapper header nav ul li {
+    line-height:3;
+    color:#FFCBB6;
+    font-size:20px; text-align:center;
+}
+#wrapper header nav ul a li {
+    width:75px;
+    margin:0 10px;
+    border-bottom:0px solid transparent;
+    transition:all 0.25s ease-in-out;
+}
+#wrapper header nav ul a li:hover {
+    color:#FF665F;
+    border-bottom:5px solid #FFCBB6;
+}
+/* --------------- end of nav --------------- */
+
+/* --------------- start of wrapper_search --------------- */
+#wrapper header #wrapper_search {
+    position:relative;
+    top:0; left:0;
+    width:300px; height:65px;
+}
+#wrapper header #wrapper_search form {
+    position:relative;
+    top:20px;
+    width:100%; height:30px;
+}
+#wrapper header #wrapper_search form input[type="search"]::-webkit-input-placeholder { color:#FFCBB6; }
+#wrapper header #wrapper_search form input[type="search"] {
+    width:90%; height:100%;
+    font-size:14px;
+    color:#FF665F;
+    padding:8px 0 9px 10px;
+    border:2px solid #FFCBB6;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    background-color:rgba(255,255,255,0.5);
+}
+#wrapper header #wrapper_search form input[type="search"]:focus { background-color:#ffffff; }
+#wrapper header #wrapper_search form input[type="submit"] { display:none; }
+#wrapper header #wrapper_search form input[type="submit"]+label {
+    display:inline-block;
+    position:absolute;
+    top:0; right:0;
+    width:10%; height:30px;
+    background-color:#FFCBB6;
+    background-image:url("../../../images/basic/icons/search_out.png");
+    background-repeat:no-repeat;
+    background-size:20px;
+    background-position:center;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    cursor:pointer;
+    transition:all 0.25s ease-in-out;
+}
+#wrapper header #wrapper_search form input[type="submit"]+label:hover { background-image:url("../../../images/basic/icons/search_over.png"); }
+/* --------------- end of wrapper_search --------------- */
+
+/* --------------- start of wrapper_sign --------------- */
+#wrapper header #wrapper_member {
+    position:relative;
+    top:0; left:0; right:0;
+    width:200px; height:65px;
+}
+#wrapper header #wrapper_member input {
+    position:relative;
+    top:-13px;
+    line-height:3.5;
+    color:#FFCBB6;
+    font-size:16px; text-align:center;
+    border-bottom:0px solid transparent;
+    background-color:transparent;
+    transition:all 0.25s ease-in-out;
+}
+#wrapper header #wrapper_member input:hover {
+    color:#FF665F;
+    border-bottom:5px solid #FFCBB6;
+}
+#wrapper header #wrapper_member div {
+    display:inline-block;
+    top:5px;
+    position:relative;
+    width:50px; height:50px;
+    border-radius:25px;
+    background-color:#FF665F;
+    background-repeat:no-repeat;
+    background-size:50px;
+    background-position:center;
+}
+/* --------------- end of wrapper_sign --------------- */
+
+/* --------------- start of wrapper_button --------------- */
+#wrapper header #wrapper_button { display:none; }
+#wrapper header input[type="checkbox"] { display:none; }
+/* --------------- end of wrapper_button --------------- */

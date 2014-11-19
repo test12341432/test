@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="board">
+	
+	<select id="list" resultType="boardBean">
+		select * from board order by board_no desc
+	</select>
+	
+	<insert id="write" parameterType="boardBean">
+		insert into board(board_no,board_name,board_title,board_content,board_private,board_password,board_img,board_file,board_date) values(board_sequence.nextval,#{ board_name },#{ board_title },#{ board_content },#{ board_private,jdbcType=INTEGER },#{ board_password,jdbcType=VARCHAR },#{ board_img,jdbcType=INTEGER },#{ board_file,jdbcType=VARCHAR },sysdate)
+	</insert>
+	
+	<update id="hit" parameterType="int">
+		update board set board_hit=board_hit+1 where board_no=#{ board_no }
+	</update>
+	
+	<select id="content" parameterType="int" resultType="boardBean">
+		select * from board where board_no=#{ board_no }
+	</select>
+	
+	<select id="password" parameterType="int" resultType="String">
+		select board_password from board where board_no=#{ board_no }
+	</select>
+	
+	<delete id="delete" parameterType="int">
+		delete from board where board_no=#{ board_no }
+	</delete>
+	
+</mapper>
