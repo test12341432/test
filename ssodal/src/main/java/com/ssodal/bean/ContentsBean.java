@@ -12,15 +12,41 @@ public class ContentsBean {
 	private String content_spot;
 	private String content_cast;
 	private int content_rating;
-	private int content_seat_class;
-	private int content_maxcount;
 	private int content_com_price;
 	private int content_vip_price;
 	private int content_r_price;
 	private int content_s_price;
 	private int content_a_price;
+	private int viptotal;
+	private int rtotal;
+	private int stotal;
+	private int atotal;
 	
 	
+	public int getViptotal() {
+		return viptotal;
+	}
+	public void setViptotal(int viptotal) {
+		this.viptotal = viptotal;
+	}
+	public int getRtotal() {
+		return rtotal;
+	}
+	public void setRtotal(int rtotal) {
+		this.rtotal = rtotal;
+	}
+	public int getStotal() {
+		return stotal;
+	}
+	public void setStotal(int stotal) {
+		this.stotal = stotal;
+	}
+	public int getAtotal() {
+		return atotal;
+	}
+	public void setAtotal(int atotal) {
+		this.atotal = atotal;
+	}
 	public int getContent_code() {
 		return content_code;
 	}
@@ -74,18 +100,6 @@ public class ContentsBean {
 	}
 	public void setContent_rating(int content_rating) {
 		this.content_rating = content_rating;
-	}
-	public int getContent_seat_class() {
-		return content_seat_class;
-	}
-	public void setContent_seat_class(int content_seat_class) {
-		this.content_seat_class = content_seat_class;
-	}
-	public int getContent_maxcount() {
-		return content_maxcount;
-	}
-	public void setContent_maxcount(int content_maxcount) {
-		this.content_maxcount = content_maxcount;
 	}
 	public int getContent_com_price() {
 		return content_com_price;

@@ -14,8 +14,10 @@ content_code int primary key	--번호
 ,content_spot varchar2(500)		--행사장소
 ,content_cast varchar2(4000)		--출연진
 ,content_rating int				--관람등급
-,content_seat_class int				--좌석여부(지정석,자유석)
-,content_maxcount int				--총 좌석
+,viptotal int 			--vip석 총좌석
+,rtotal int 			--R석 총좌석
+,stotal int 			--S석 총좌석
+,atotal int 			--A석 총좌석
 ,content_com_price int				-- 자유석입장료
 ,content_vip_price int				-- vip입장료
 ,content_r_price int				-- R석 입장료
@@ -23,8 +25,16 @@ content_code int primary key	--번호
 ,content_a_price int				-- A석 입장료
 );
 create sequence contents_no_seq increment by 1 start with 1 nocache;
-
+alter table contents drop(content_seat_class);
+alter table contents add(viptotal int);
+alter table contents add(content_seat_class int);
+alter table contents add(rtotal int);
+alter table contents add(stotal int);
+alter table contents add(atotal int);
 select * from contents;
+
+update contents set viptotal=200, rtotal=200, stotal=200, atotal=200 where content_code=3;
+update contents set viptotal=200, rtotal=200, stotal=200, atotal=200 where content_code=3;
 
 insert into contents values (contents_no_seq.nextval,'뮤지컬','뮤지컬 위키드','Musical Wicked','2013/11/22','2014/10/05'
 ,'샤롯데씨어터','김선영/박혜나/김소현/김보경/이지훈/조상웅/외..',7,1,0,360,140000,110000,900000,600000);

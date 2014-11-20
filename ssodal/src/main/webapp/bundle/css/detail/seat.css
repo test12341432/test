@@ -46,7 +46,11 @@
 	font-color:white;
 	
 }
-
+/* seat button color*/
+#article #section_seat #seat_outline #seat_location #seat_lo_box #one_floor ul li,#two_floor ul li, #three_floor ul li{
+	background-color:#fafaaa;
+	border:2px solid #ff9d6e;
+}
 /* seat location one floor */
 #article #section_seat #seat_outline #seat_location #seat_lo_box #one_floor{
 	border:3px solid #ccc;
@@ -131,7 +135,7 @@
 	border:3px solid #d27328;
 	background-color:#ffe650;
 }
-#article #section_seat #seat_outline #seat_location #seat_lo_box #one_floor .seat_one_R_left:hover, .seat_one_R_right:hover ,.seat_two_R:hover{
+#article #section_seat #seat_outline #seat_location #seat_lo_box #one_floor .seat_one_R_left:hover, #one_floor .seat_one_R_right:hover, #two_floor .seat_two_R:hover{
 	cursor:pointer; cursor:hand;
 	border:3px solid #4646cd;
 	background-color:#1e82ff;
@@ -153,5 +157,4 @@
 }
 #article #section_seat #seat_outline #seat_detail_Information p{
 	margin-top:10px; margin-left:8px;
-	
 }

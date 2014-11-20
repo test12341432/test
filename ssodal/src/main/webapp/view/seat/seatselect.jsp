@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@ include file="../header/header.jsp" %>
-
+<jsp:include page="../header/header.jsp" flush="false"/>
+ 
 			<article id="article">
 				<section id="section_seat">
 					<div id="seat_outline">
@@ -11,20 +11,28 @@
 								</div>
 								<div id="one_floor">
 								<p>1층</p>
-								<input type="button" value="R석" class="seat_one_R_left"/>
-								<input type="button" value="VIP석" id="vip_seat" name="vip_seat" class="seat_one_VIP_mid" />
-								<input type="button" value="R석" class="seat_one_R_right"/>
+								
+								
+								<ul>
+								<li class="seat_one_R_left">R석</li>
+								<a href="javascript:;" onclick="open_url('select_result.do', 'seat_code=1', 'seat_location')"><li class="seat_one_VIP_mid" >VIP석</li></a>
+								<a href="javascript:;" onclick="open_url('select_result.do', 'seat_code=2', 'seat_location')"><li class="seat_one_R_right">R석</li></a>
+								</ul>
 								</div>
 								<div id="two_floor">
 								<p>2층</p>
-								<input type="button" value="VIP석" id="vip_seat" name="vip_seat" class="seat_two_VIP" />
-								<input type="button" value="R석" class="seat_two_R"/>
-								<input type="button" value="S석" class="seat_two_S"/>
+								<ul>
+								<li class="seat_two_VIP" >VIP석</li>
+								<li class="seat_two_R">R석</li>
+								<li class="seat_two_S" >S석</li>
+								</ul>
 								</div>
 								<div id="three_floor">
 								<p style="font-color:white;">3층</p>
-								<input type="button" value="S석" class="seat_three_S"/>
-								<input type="button" value="A석" class="seat_three_A"/>
+								<ul>
+								<li class="seat_three_S">S석</li>
+								<li class="seat_three_A">A석</li>
+								</ul>
 								</div>
 							</div>
 						</div>
