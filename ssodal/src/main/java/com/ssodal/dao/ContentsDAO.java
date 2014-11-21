@@ -10,7 +10,8 @@ public interface ContentsDAO {
 
 	ContentsBean showI(int i);
 
-	List<SeatBean> getSeat(int seat_code);
+	List<SeatBean> seat_Info(int content_code);
+
 
 
 }

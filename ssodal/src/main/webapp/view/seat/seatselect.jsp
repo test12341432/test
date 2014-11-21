@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<jsp:include page="../header/header.jsp" flush="false"/>
- 
+ <%@ include file="../header/header.jsp"%>
 			<article id="article">
 				<section id="section_seat">
 					<div id="seat_outline">

@@ -8,7 +8,7 @@
 	select * from contents where content_code=#{i}
 	</select>
 	
-	<select id="seat_row" parameterType="int" resultType="seatbean">
-	select * from seat_info where content_seat_class=#{seat_code}
+	<select id="seat_info" parameterType="sbean" resultType="sbean" >
+		select * from seat_info where content_no=#{content_code}
 	</select>
 </mapper>

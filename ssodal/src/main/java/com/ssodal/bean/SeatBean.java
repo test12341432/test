@@ -5,9 +5,17 @@ public class SeatBean {
 	private int content_no;
 	private String id;
 	private int content_seat_class;
-	private int seat_date;
-	private String seat_location;
+	private String seat_date;
 	private int seat_row;
+	private int seat_line;
+	private int selected_seat;
+	public int getSelected_seat() {
+		return selected_seat;
+	}
+	public void setSelected_seat(int selected_seat) {
+		this.selected_seat = selected_seat;
+	}
+	
 	public int getContent_no() {
 		return content_no;
 	}
@@ -26,17 +34,11 @@ public class SeatBean {
 	public void setContent_seat_class(int content_seat_class) {
 		this.content_seat_class = content_seat_class;
 	}
-	public int getSeat_date() {
+	public String getSeat_date() {
 		return seat_date;
 	}
-	public void setSeat_date(int seat_date) {
+	public void setSeat_date(String seat_date) {
 		this.seat_date = seat_date;
-	}
-	public String getSeat_location() {
-		return seat_location;
-	}
-	public void setSeat_location(String seat_location) {
-		this.seat_location = seat_location;
 	}
 	public int getSeat_row() {
 		return seat_row;
@@ -50,5 +52,5 @@ public class SeatBean {
 	public void setSeat_line(int seat_line) {
 		this.seat_line = seat_line;
 	}
-	private int seat_line;
+	
 }

@@ -1,5 +1,6 @@
 package com.ssodal.dao;
 
+
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -21,9 +22,9 @@ public class ContentsDAOImpl implements ContentsDAO {
 	}
 
 	@Override
-	public List<SeatBean> getSeat(int seat_code) {
-		return this.sqlSession.selectList("seat_row", seat_code);
-		
+	public List<SeatBean> seat_Info(int content_code) {
+		return this.sqlSession.selectList("seat_info", content_code);
 	}
+
 
 }

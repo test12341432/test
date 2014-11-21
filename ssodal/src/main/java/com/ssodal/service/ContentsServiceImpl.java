@@ -1,5 +1,6 @@
 package com.ssodal.service;
 
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +22,9 @@ public class ContentsServiceImpl implements ContentsService {
 	}
 
 	@Override
-	public List<SeatBean> getSeatinfo(int seat_code) {
-		
-		return this.contDAO.getSeat(seat_code);
+	public List<SeatBean> seat_info(int content_code) {
+		return this.contDAO.seat_Info(content_code);
 	}
+
+
 }

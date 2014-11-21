@@ -21,6 +21,38 @@ public class ContentsBean {
 	private int rtotal;
 	private int stotal;
 	private int atotal;
+	private int vip_line;	
+	private int r_line;
+	private int s_line;
+	private int a_line;
+	
+	
+	
+	public int getVip_line() {
+		return vip_line;
+	}
+	public void setVip_line(int vip_line) {
+		this.vip_line = vip_line;
+	}
+	public int getR_line() {
+		return r_line;
+	}
+	public void setR_line(int r_line) {
+		this.r_line = r_line;
+	}
+	public int getS_line() {
+		return s_line;
+	}
+	public void setS_line(int s_line) {
+		this.s_line = s_line;
+	}
+	public int getA_line() {
+		return a_line;
+	}
+	public void setA_line(int a_line) {
+		this.a_line = a_line;
+	}
+
 	
 	
 	public int getViptotal() {

@@ -7,6 +7,8 @@
 		});
 		});
 	*/
+window.history.forward(1); //뒤로가기로의 접근을 막는다
+
 function open_url( url, data, target ){ 
 $.ajax({ 	
   type: "POST", 
